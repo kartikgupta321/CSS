@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        *{
+            /* margin: 0;
+            padding: 0; */
+        }
+        li{
+            /* display: inline-block; */
+            list-style: square outside url('red.png');
+        }
+        ul{
+            /* background-color: red; */
+        }
+        header{
+            z-index: 1;
+            text-align: center;
+            background-color: black;
+            color: white;
+            height: 70px;
+        }
+        p{
+            text-align: center;
+            border: 2px solid red;
+        }
+        .container{
+            background-color: aqua;
+            height: 50vh;
+            width: 50vw;
+            margin: auto;
+        }
+        .box{
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            background-color: green;
+        }
+        .box2{
+            height: 200px;
+            width: 200px;
+            background-color: rgb(19, 0, 128);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla natus tempora voluptates eveniet! Ad accusamus, praesentium repudiandae non sunt ab?</p>
+        <div class="box">
+            i am a box
+        </div>
+        <div class="box2">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus mollitia, maxime perferendis facere illum excepturi sint repudiandae aliquid dicta sit.
+        </div>
+    </div>
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Orange</li>
+    </ul>
+</body>
+</html>

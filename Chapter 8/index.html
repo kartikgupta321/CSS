@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: red;
+            height: 146px;
+        }
+        .box{
+            border: 2px solid black;
+            /* transform:translate(34px,56px) ; */
+            /* transform-origin: 0; */
+            /* transform: scale(0.5); */
+            /* transform: skew(40deg, 10deg); */
+            /* transform: rotateX(56deg); */
+        }
+        img{
+            width: 146px;
+            transition-property: width;
+            transition-duration: 1s;
+            transition-timing-function: ease-in;
+            /* transition-delay: 3s; */
+        }
+        img:hover{
+            width: 56px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img id="myimage" src="https://images.unsplash.com/photo-1589149098258-3e9102cd63d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=960&q=520" alt="pic">
+            <button id = "btn">Toggle</button>
+        </div>
+
+    </div>
+</body>
+<script>
+    myimage.style.width = "146px";
+    btn.addEventListener("click", ()=>{
+        if(myimage.style.width === "546px"){
+            myimage.style.width ="146px"
+        }
+        else if(myimage.style.width === "146px"){
+            myimage.style.width ="546px"
+        }
+        
+    })
+</script>
+</html>
